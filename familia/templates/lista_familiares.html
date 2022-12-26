@@ -10,13 +10,13 @@
     <h1 style = 'color: palevioletred;'> Listado de los integrantes de la familia de Rocio</h1>
 
     {% for familiar in lista_familiares %}
-        <p> El <u> familiar </u> se llama <b>{{familiar.nombre}}</b></p>
-        <p> Su <u> edad </u> es <b>{{familiar.edad}}</b> </p>
+        <p> El <u>familiar</u> se llama: <b>{{familiar.nombre}}</b></p>
+        <p> Su <u>edad</u> es: <b>{{familiar.edad}}</b> </p>
         
         {% if familiar.mayor_edad == True %}
-        <p> El familiar es <b> mayor de edad </b> </p>
+        <p> El familiar es <b>mayor de edad</b> </p>
         {%else%}
-        <p> El familiar <b> no es mayor de edad </b> </p>
+        <p> El familiar <b>no es mayor de edad</b> </p>
         {%endif%}
         <br>
     {% endfor %} 
