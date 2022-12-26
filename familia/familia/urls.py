@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from familia_app.views import crear_familiar, listar_familiar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path ('crear-familiar/', crear_familiar),
+    path ('listar-familiar/', listar_familiar),
 ]
